@@ -1,0 +1,57 @@
+name: Build Resume Assets
+
+on:
+  push:
+    paths:
+      - "index.html"
+      - "styles.css"
+      - "assets/icons.svg"
+      - "scripts/build-resume.js"
+      - ".github/workflows/build.yml"
+
+permissions:
+  contents: write
+  pages: write
+  id-token: write
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v5
+
+      - uses: actions/setup-node@v5
+        with:
+          node-version: 24
+
+      - run: npm install
+      - run: npx playwright install --with-deps
+
+      - run: sudo apt-get update
+      - run: sudo apt-get install -y poppler-utils
+
+      - run: node scripts/build-resume.js
+
+      - name: Upload artifacts
+        uses: actions/upload-artifact@v4
+        with:
+          name: resume-build
+          path: |
+            resume.png
+            resume.pdf
+
+      - name: Setup Pages
+        uses: actions/configure-pages@v5
+
+      - name: Upload Pages artifact
+        uses: actions/upload-pages-artifact@v3
+        with:
+          path: .
+
+  deploy:
+    needs: build
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/deploy-pages@v4

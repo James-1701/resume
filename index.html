@@ -1,0 +1,524 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script>
+      document.title = "James Hollister's Resume";
+    </script>
+    <title>James Hollister's Resume</title>
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+
+  <body>
+    <div class="resume-container">
+      <h1>James Hollister</h1>
+
+      <div class="sidebar">
+        <div class="contact-info">
+          <div>
+            <a href="tel:+16163287490">
+              <i class="fas fa-phone"></i><span>(616) 328-7490</span>
+            </a>
+          </div>
+          <div>
+            <a href="mailto:mail@jameshollister.org">
+              <i class="fas fa-envelope"></i>mail@jameshollister.org
+            </a>
+          </div>
+          <div>
+            <a
+              href="https://www.linkedin.com/in/jameshollister"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <i class="fab fa-linkedin"></i>linkedin.com/in/jameshollister
+            </a>
+          </div>
+
+          <div>
+            <a
+              href="https://github.com/James-1701"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <i class="fab fa-github"></i>github.com/James-1701
+            </a>
+          </div>
+        </div>
+
+        <div class="skills-section">
+          <h2>Technical Skills</h2>
+
+          <div class="skills-group">
+            <strong>Languages </strong>
+            <div class="skill-grid">
+              <span class="skill-chip">
+                <svg class="icon">
+                  <use href="assets/icons.svg#icon-c"></use>
+                </svg>
+                C / Make
+              </span>
+              <span class="skill-chip"> <i class="fab fa-rust"></i>Rust </span>
+              <span class="skill-chip">
+                <svg class="icon">
+                  <use href="assets/icons.svg#icon-csharp"></use>
+                </svg>
+                C# / .NET
+              </span>
+              <span class="skill-chip"> <i class="fab fa-java"></i>Java </span>
+              <span class="skill-chip">
+                <i class="fab fa-python"></i>Python
+              </span>
+              <span class="skill-chip">
+                <svg class="icon">
+                  <use href="assets/icons.svg#icon-bash"></use>
+                </svg>
+                Bash
+              </span>
+              <span class="skill-chip">
+                <svg class="icon">
+                  <use href="assets/icons.svg#icon-nix"></use>
+                </svg>
+                Nix
+              </span>
+              <span class="skill-chip">
+                <i class="fas fa-database"></i>SQL
+              </span>
+              <span class="skill-chip">
+                <i class="fab fa-js"></i>JavaScript
+              </span>
+              <span class="skill-chip">
+                <i class="fas fa-file-code"></i>HTML & CSS
+              </span>
+            </div>
+          </div>
+
+          <div class="skills-group">
+            <strong>DevOps & Infrastructure </strong>
+            <div class="skill-grid">
+              <span class="skill-chip">
+                <i class="fab fa-git-alt"></i>Git
+              </span>
+              <span class="skill-chip">
+                <i class="fab fa-github"></i>GitHub Actions
+              </span>
+              <span class="skill-chip">
+                <i class="fab fa-docker"></i>Docker
+              </span>
+              <span class="skill-chip"> <i class="fas fa-key"></i>SOPS </span>
+            </div>
+          </div>
+
+          <div class="skills-group">
+            <strong>Networking & Monitoring </strong>
+            <div class="skill-grid">
+              <span class="skill-chip">
+                <svg class="icon">
+                  <use href="assets/icons.svg#icon-nginx"></use>
+                </svg>
+                Nginx
+              </span>
+              <span class="skill-chip">
+                <svg class="icon">
+                  <use href="assets/icons.svg#icon-tailscale"></use>
+                </svg>
+                Tailscale
+              </span>
+              <span class="skill-chip">
+                <svg class="icon">
+                  <use href="assets/icons.svg#icon-prometheus"></use>
+                </svg>
+                Prometheus
+              </span>
+              <span class="skill-chip">
+                <svg class="icon">
+                  <use href="assets/icons.svg#icon-grafana"></use>
+                </svg>
+                Grafana
+              </span>
+              <span class="skill-chip">
+                <svg class="icon">
+                  <use href="assets/icons.svg#icon-wireshark"></use>
+                </svg>
+                Wireshark
+              </span>
+            </div>
+          </div>
+
+          <div class="skills-group">
+            <strong>Systems Engineering </strong>
+            <div class="skill-grid">
+              <span class="skill-chip">
+                <i class="fab fa-linux"></i>Linux
+              </span>
+              <span class="skill-chip">
+                <svg class="icon">
+                  <use href="assets/icons.svg#icon-nix"></use>
+                </svg>
+                NixOS
+              </span>
+              <span class="skill-chip">
+                <i class="fas fa-microchip"></i>KVM/QEMU
+              </span>
+              <span class="skill-chip">
+                <i class="fas fa-hdd"></i>ZFS & Btrfs
+              </span>
+              <span class="skill-chip">
+                <svg class="icon">
+                  <use href="assets/icons.svg#icon-systemd"></use>
+                </svg>
+                systemd
+              </span>
+            </div>
+          </div>
+
+          <!--<div class="skills-group">
+            <strong>Engineering Practices</strong>
+            <div class="skill-grid">
+              <span class="skill-chip"
+                ><i class="fas fa-sliders-h"></i>System Administration</span
+              >
+              <span class="skill-chip">
+                <i class="fas fa-project-diagram"></i>CI/CD
+              </span>
+              <span class="skill-chip"
+                ><i class="fas fa-cloud"></i>Cloud Infrastructure</span
+              >
+              <span class="skill-chip"
+                ><i class="fas fa-sync-alt"></i>Reproducible Systems</span
+              >
+              <span class="skill-chip"
+                ><i class="fas fa-cog"></i>Infra & Automation</span
+              >
+              <span class="skill-chip"
+                ><i class="fas fa-home"></i>Self-Hosting</span
+              >
+              <span class="skill-chip"
+                ><i class="fas fa-lock"></i>Secure Systems</span
+              >
+              <span class="skill-chip"
+                ><i class="fas fa-shield-alt"></i>Backup & Recovery</span
+              >
+            </div>
+          </div>-->
+
+          <div class="skills-group">
+            <strong>Mechanical Design </strong>
+            <div class="skill-grid">
+              <span class="skill-chip">
+                <svg class="icon">
+                  <use href="assets/icons.svg#icon-solidworks"></use>
+                </svg>
+                SolidWorks</span
+              >
+              <span class="skill-chip">
+                <svg class="icon">
+                  <use href="assets/icons.svg#icon-autocad"></use>
+                </svg>
+                AutoCAD</span
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="main-content">
+        <section>
+          <h2>Education</h2>
+          <h3>
+            <svg class="org-icon">
+              <use href="assets/icons.svg#icon-gvsu"></use>
+            </svg>
+            B.S. in Computer Science
+            <span class="date-right">2024 – Expected May 2028</span>
+          </h3>
+          <p>
+            Minors in
+            <strong>Engineering</strong> and
+            <strong>Cybersecurity</strong>
+          </p>
+          <p>Grand Valley State University | Honors College | Dean's List</p>
+          <p><strong>GPA: 3.7 </strong>(Relevant Coursework: 3.9)</p>
+          <h3 class="IB">
+            <svg class="org-icon">
+              <use href="assets/icons.svg#icon-ib"></use>
+            </svg>
+            International Baccalaureate Diploma –
+            <span class="date-right">2020 – 2024</span>
+            <span style="font-weight: normal"> City High Middle </span>
+          </h3>
+        </section>
+
+        <section>
+          <h2>Work Experience & Leadership</h2>
+          <div class="job-entry">
+            <h3>
+              <svg class="org-icon">
+                <use href="assets/icons.svg#icon-howmet"></use>
+              </svg>
+              Howmet Aerospace –
+              <span style="font-weight: normal; font-style: italic"
+                >Information Technology Intern</span
+              >
+              <span class="date-right">2026 – Present</span>
+            </h3>
+            <ul>
+              <li>
+                Worked directly with manufacturing and process engineers to
+                develop internal C# / .NET applications for automating
+                production workflows
+              </li>
+              <li>
+                Refactored legacy systems to improve maintainability,
+                reliability, and long-term developer experience
+              </li>
+            </ul>
+          </div>
+
+          <div class="job-entry">
+            <h3>
+              <svg class="org-icon">
+                <use href="assets/icons.svg#icon-rowing2"></use>
+              </svg>
+              GVSU Rowing Team –
+              <span style="font-weight: normal; font-style: italic"
+                >Varsity Athlete & Executive Board</span
+              >
+              <span class="date-right">2025 – Present</span>
+            </h3>
+            <ul>
+              <li>
+                Built and deployed the
+                <strong>GVSU Snow Removal Scheduler</strong> as manager of the
+                rowing team's contract with University Facilities, automating
+                scheduling and reducing coordination from hours to minutes
+              </li>
+            </ul>
+          </div>
+          <div class="job-entry">
+            <h3>
+              <svg class="org-icon">
+                <use href="assets/icons.svg#icon-pkt"></use>
+              </svg>
+              Phi Kappa Tau –
+              <span style="font-weight: normal; font-style: italic"
+                >Founding Father & Executive Board</span
+              >
+              <span class="date-right">2024 – Present</span>
+            </h3>
+          </div>
+
+          <div class="job-entry">
+            <h3>
+              <svg class="org-icon">
+                <use href="assets/icons.svg#icon-first"></use>
+              </svg>
+              FIRST Robotics –
+              <span style="font-weight: normal; font-style: italic"
+                >Software Team</span
+              >
+              <span class="date-right">2023</span>
+            </h3>
+          </div>
+
+          <div class="job-entry">
+            <h3>
+              <svg class="org-icon">
+                <use href="assets/icons.svg#icon-lifeguard"></use>
+              </svg>
+              Grand Rapids Parks & Rec / YMCA –
+              <span style="font-weight: normal; font-style: italic"
+                >Lifeguard</span
+              >
+              <span class="date-right">2023 – 2024</span>
+            </h3>
+          </div>
+        </section>
+
+        <section>
+          <h2>Projects</h2>
+          <p class="sub-text">
+            <a
+              href="https://github.com/James-1701"
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="View GitHub profile"
+            >
+              <i class="fab fa-github"></i><span> Public</span>
+            </a>
+            |
+            <a
+              href="mailto:mail@jameshollister.org?subject=Code%20Sample%20Request"
+              aria-label="Request private code samples"
+            >
+              <i class="fas fa-code-branch"></i
+              ><span> Private (code samples on request)</span>
+            </a>
+          </p>
+          <h3>
+            <a
+              href="mailto:mail@jameshollister.org?subject=Code%20Sample%20Request"
+              aria-label="Request private code samples"
+            >
+              <i class="fas fa-code-branch"></i>
+              Type-II –
+              <span class="normal-weight">Space Strategy Game</span>
+              <i class="fab fa-rust"></i>
+            </a>
+            <span class="date-right">2026 – Present</span>
+          </h3>
+          <ul>
+            <li>
+              Real-time strategy game built in Rust using Bevy ECS with a
+              modular message based architecture employing extensive unit tests
+            </li>
+            <li>
+              Generation builds procedural solar systems using physically
+              accurate orbital mechanics with a deterministic, seeded generation
+              pipeline ensuring reproducible state and simulation across runs
+            </li>
+          </ul>
+
+          <h3>
+            <a
+              href="https://github.com/James-1701/nix-lineage"
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="View on GitHub"
+            >
+              <i class="fab fa-github"></i>
+              Nix Lineage –
+              <span class="normal-weight">Open Source Library </span>
+              <svg class="org-icon">
+                <use href="assets/icons.svg#icon-nix"></use>
+              </svg>
+            </a>
+            <span class="date-right">2025 – 2026</span>
+          </h3>
+          <ul>
+            <li>
+              Transitive dependency resolver that expands minimal host
+              definitions into complete attribute hierarchies (e.g., "HP
+              Spectre" → CPU, GPU, RAM traits)
+            </li>
+            <li>
+              Optimized graph traversal algorithm from O(n²) to O(V+E), enabling
+              resolution of 200,000+ hierarchical attributes in under 3 seconds
+            </li>
+            <li>
+              Decouples hardware taxonomy from software configuration, enabling
+              &lt;10 line hostfiles to deploy full systems while maintaining
+              known-good defaults
+            </li>
+          </ul>
+
+          <h3>
+            <a
+              href="https://github.com/James-1701/nix-infra"
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="View on GitHub"
+            >
+              <i class="fab fa-github"></i>
+              Nix Infra –
+              <span class="normal-weight"
+                >Multi-System Declarative Infrastructure
+              </span>
+              <i class="fab fa-linux"></i>
+              <svg class="org-icon">
+                <use href="assets/icons.svg#icon-nix"></use>
+              </svg>
+            </a>
+            <span class="date-right">2025 – Present</span>
+          </h3>
+          <ul>
+            <li>
+              Infrastructure-as-code platform managing 15+ systems (laptops,
+              VMs, cloud VPS) with SOPS/age-encrypted secrets, Tailscale overlay
+              networking, and fully automated SSH deployment
+            </li>
+            <li>
+              Deployed self-hosted monitoring stack (Prometheus, Grafana, Loki)
+              with centralized log aggregation across all nodes; integrated
+              TruffleHog secret scanning and flake evaluation checks into CI
+            </li>
+          </ul>
+
+          <h3>
+            Others –
+            <span class="normal-weight">
+              <a
+                href="https://github.com/James-1701/gvsu-snow-removal-scheduler"
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="View on GitHub"
+              >
+                GVSU Snow Removal Scheduler
+              </a>
+            </span>
+          </h3>
+        </section>
+
+        <section>
+          <h2>Open Source Contributions</h2>
+          <div class="contribution">
+            <h3>
+              <a href="https://github.com/NixOS/nixpkgs" target="_blank">
+                <i class="fab fa-github"></i> NixOS/nixpkgs
+              </a>
+              <span class="date-right">2026</span>
+            </h3>
+            <ul>
+              <li>
+                <a
+                  href="https://github.com/NixOS/nixpkgs/pull/496296"
+                  target="_blank"
+                >
+                  <strong>nixos/uptime-kuma – </strong>
+                </a>
+                Ported uptime-kuma to a modular NixOS service, prepared as part
+                of a GSoC application (<em>open PR #496296</em>)
+              </li>
+              <li>
+                <a
+                  href="https://github.com/NixOS/nixpkgs/pull/492556"
+                  target="_blank"
+                >
+                  <strong>nixos/sshd – </strong>
+                </a>
+                Fixed host-specific config validation being offloaded to remote
+                builders, causing cyclic hangs in distributed builds (<em
+                  >open PR #492556</em
+                >)
+              </li>
+              <li>
+                <a
+                  href="https://github.com/NixOS/nixpkgs/pull/494583"
+                  target="_blank"
+                >
+                  <strong>ceph 20.2.0 – </strong>
+                </a>
+                Independently resolved gcc-15 rocksdb compatibility failures and
+                backported PyO3 subinterpreter fix (<em
+                  >contributed branch to PR #494583</em
+                >)
+              </li>
+            </ul>
+          </div>
+        </section>
+        <footer class="resume-footer">
+          <a href="https://github.com/James-1701/resume" target="_blank">
+            Built with HTML & CSS. Source available on GitHub.
+          </a>
+        </footer>
+      </div>
+    </div>
+  </body>
+</html>
