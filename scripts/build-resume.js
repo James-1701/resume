@@ -29,7 +29,7 @@ const { spawn, execSync } = require("child_process");
     path: "resume.pdf",
     format: "Letter",
     printBackground: true,
-    scale: 0.78,
+    scale: 0.76,
     pageRanges: "1",
   });
 
