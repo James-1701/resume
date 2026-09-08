@@ -46,6 +46,7 @@ devenv.local.yaml
 
 # Build results
 result*
+dist/
 
 # Disk Images
 *.qcow2

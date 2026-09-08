@@ -17,6 +17,8 @@ in
 
     live-server
 
+    # pdftoppm
+
     # Command runner
     just
   ];
@@ -129,5 +131,9 @@ in
     editorconfig-checker.enable = true;
     trim-trailing-whitespace.enable = true;
     end-of-file-fixer.enable = true;
+  };
+
+  env = {
+    CHROMIUM_PATH = "${pkgs.chromium}/bin/chromium";
   };
 }

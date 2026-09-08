@@ -2,12 +2,15 @@ name: Build Resume Assets
 
 on:
   push:
+    branches:
+      - main
     paths:
       - "index.html"
       - "styles.css"
       - "assets/icons.svg"
       - "scripts/build-resume.js"
       - ".github/workflows/build.yml"
+      - "resume/**"
 
 permissions:
   contents: write
@@ -37,9 +40,7 @@ jobs:
         uses: actions/upload-artifact@v4
         with:
           name: resume-build
-          path: |
-            resume.png
-            resume.pdf
+          path: ./dist
 
       - name: Setup Pages
         uses: actions/configure-pages@v5
@@ -47,7 +48,7 @@ jobs:
       - name: Upload Pages artifact
         uses: actions/upload-pages-artifact@v3
         with:
-          path: .
+          path: ./dist
 
   deploy:
     needs: build
